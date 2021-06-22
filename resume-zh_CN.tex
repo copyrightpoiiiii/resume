@@ -2,7 +2,7 @@
 % !TEX encoding = UTF-8 Unicode
 % !Mode:: "TeX:UTF-8"
 
-\documentclass{resume}
+\documentclass[10pt]{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 % \usepackage{NotoSansSC_external}
 % \usepackage{NotoSerifCJKsc_external}
@@ -12,50 +12,58 @@
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
+\footnotesize
 
-\name{你的大名}
+\name{张淇}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{copyrightpoi@icloud.com} \textperiodcentered\ 
+  \phone{(+86) 173-6403-9183} \textperiodcentered\ 
+ \faGithub ~ github.com/copyrightpoiiiii}
+ 
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\datedsubsection{\textbf{华中科技大学}, 武汉}{2021 -- 至今}
+\textit{在读研究生}\ 计算机科学与技术学院
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{华中科技大学}, 武汉}{2017 -- 2021}
+\textit{学士}\ 计算机科学与技术学院(卓越工程师班)
+
+\textit{在校成绩}\  前25\% , \ CET-6,\ CSP成绩: 330
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{分组染色问题} }{2018年6月 -- 2018年11月}
+\role{C++, 图论, 组合优化}{个人项目}
+\ \ \ \ 设计了一种新的求解组合染色问题的启发式算法
+
+\ \ \ \ 结合了遗传算法,邻域搜索和禁忌搜索进行求解,并且将分组染色问题的求解和传统的图染色算法求解连接了起来,同时打破了部分算例的运行时间纪录
+
+
+\datedsubsection{\textbf{MiniSat}}{2018年11月 -- 2019年3月}
+\role{C++, 组合优化}{个人项目}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
+\ \ \ \ 使用C++实现了MiniSat求解器，可以求解命题可满足性问题
+
+\ \ \ \ 根据MiniSat的相关论文实现了MiniSat算法，在实现过程中还实现了多种数据结构模板：Vector, Priority\_Queue, Set
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{网站服务器}}{2019 年11月 -- 2019 年11月}
+\role{C++,Qt,MacOS}{个人项目}
+\ \ \ \ 一个可以运行在Mac系统的具有图形化界面的网站服务器
+
+\ \ \ \ 该服务器使用Qt实现图形化界面, 使用kqueue实现多线程调度,并且可以配置网站地址，端口号和工作目录
+
+\datedsubsection{\textbf{数据库在CI环境的容器化}}{2020 年10月 -- 2021年1月}
+\role{微软中国(北京)}{C\#,Docker}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
+\ \ \ \ 构建Pipeline自动将某业务后台数据库构建为Docker镜像
+
+\ \ \ \ 在CI环境使用构建好的Docker镜像进行测试
+
+\ \ \ \ 采用此方式后，CI环境初始化阶段的数据传输量下降45\%，CI Pipeline运行速度提升10\%
+
+
 \end{onehalfspacing}
 
 % Reference Test
@@ -68,22 +76,22 @@ xxx后端开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
+  \item 编程语言: C > C++ > C\# > Java
   \item 平台: Linux
-  \item 开发: xxx
+  \item 开发: Web, Sql , Docker
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{银牌}, 2018年湖北省大学生程序设计竞赛}{2018 年4 月}
+\datedline{\textit{银牌}, CCF大学生计算机系统与程序设计大赛(CCSP) }{2018年10 月}
+\datedline{\textit{一等奖}, 蓝桥杯 }{2019月}
 
-\section{\faInfo\ 其他}
+%\section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+%\begin{itemize}[parsep=0.5ex]
+%  \item CSP成绩: 330
+%  \item 语言: 英语 - 六级
+%\end{itemize}
 
 %% Reference
 %\newpage
