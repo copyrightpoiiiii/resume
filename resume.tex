@@ -112,13 +112,13 @@
 % 名字局中，信息放下一行
   \centering{\textbf{\href{https://github.com/copyrightpoiiiii}{\Large 张淇}}}
 
-   \faEnvelope\ \href{mailto:copyrightpoi@icloud.com}{copyrightpoi@icloud.com}\ \ \ \faPhone\ (+86) 173-6403-9183 \ \ \ \faGithub\ \href{https://github.com/copyrightpoiiiii}{github.com/copyrightpoiiiii}
+   \faEnvelope\ \href{mailto:copyrightpoi@icloud.com}{copyrightpoi@icloud.com}\ \ \ \faPhone\ (+86) 152-7191-1983 \ \ \ \faGithub\ \href{https://github.com/copyrightpoiiiii}{github.com/copyrightpoiiiii}
 \vspace{1pt}
 \section{\faGraduationCap \ 教育背景}
   \resumeSubHeadingListStart
     \resumeSubheading
       {华中科技大学 -- 硕士在读}{2021 -- 至今}
-      {计算机科学与技术学院；\ 导师：吴松教授； }{}
+      {计算机科学与技术学院；\ 导师：吴松教授 }{}
     \resumeSubheading
       {华中科技大学 -- 学士}{2017 -- 2021}
       {计算机科学与技术学院(卓越工程师班)；\textit{在校成绩}\  前20\% , \ CET-6,\ CSP成绩: 330}{}
@@ -130,21 +130,21 @@
   \resumeTwoItemHeading{个人项目 -- 基于遗传算法与邻域搜索的分组染色算法}{\href{https://github.com/copyrightpoiiiii/Hybrid-Evolutionary-Algorithms-for-the-Partition-Coloring-Problem}{\faGithub*}\ \ 2018.6 -- 2018.11}
     \resumeItemListStart
           \resumeOneItem{将分组染色算法的设计思路从设计约束进行求解转换到了对点集进行维护，并与传统的图染色算法相结合}
-          \resumeOneItem{使用遗传算法维护点集，基于tabu表设计选择算子，设计了一种启发式的选择算子，使用邻域搜索做为变异运算}
-          \resumeOneItem{负责算法设计、代码实现以及测试，实现算法在测试算例上运行结果和运行效率均优于现有算法}
+          \resumeOneItem{使用遗传算法维护点集，设计了基于tabu表的选择算子，设计了一种启发式的选择算子，使用邻域搜索做为变异运算}
+          \resumeOneItem{负责算法设计、代码实现以及测试，所实现算法在测试算例上运行结果和运行效率均优于或持平于现有算法}
     \resumeItemListEnd
   \resumeTwoItemHeading{课程项目 -- Sat求解器}{\href{https://github.com/copyrightpoiiiii/Sat-and-Sudoku-Solver}{\faGithub*}\ \ 2019.2 -- 2019.3}
     \resumeItemListStart
-          \resumeOneItem{根据MiniSat的相关论文对MiniSat求解器进行了实现}
-          \resumeOneItem{实现了变量传播、冲突学习、启发式的变量优先级等功能}
-          \resumeOneItem{实现了多种数据结构模板：Vector, Priority\_Queue, Set}
-          \resumeOneItem{总C代码量达两千行，求解器性能在全系排名前5\%}
+          \resumeOneItem{根据MiniSat的相关论文实现了MiniSat求解器}
+          \resumeOneItem{实现了变量传播、冲突学习、启发式调整变量优先级等功能}
+          \resumeOneItem{实现了多种数据结构模板：Vector, Priority\_Queue}
+          \resumeOneItem{总代码量达两千行，求解器性能在全系排名前5\%}
     \resumeItemListEnd
      \resumeTwoItemHeading{本科毕设 -- 面向容器的内核参数虚拟化方法研究}{2021.3 -- 2021.5}
      \resumeItemListStart
            \resumeOneItem{对Linux内核进行修改，使内核参数对进程隔离，在CGroups中增加用于控制内核参数的子系统}
            \resumeOneItem{修改Linux进程调度算法，使Linux内核根据每个进程不同的内核参数进行调度}
-           \resumeOneItem{分别调整延迟敏感型容器和批处理任务容器的内核参数，其运行效率（较隔离之前）提升幅度为5\%~10\%}
+           \resumeOneItem{分别调整延迟敏感型容器和批处理任务容器的内核参数，其运行效率（较隔离之前）提升幅度为5\% $\sim$ 10\%}
      \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{1pt}
@@ -157,8 +157,9 @@
     % \resumeTwoItemHeading{字节跳动 -- Data评论 -- 后端开发工程师}{2019.3 -- 2019.6}
     \resumeThreeItemHeading{微软}{BingAds -- 后端开发工程师}{2020.7 -- 2021.2}
         \resumeItemListStart
-        \resumeOneItem{主要工作为各产品线评论审核相关的研发与数据分析，涉及审核模板的创建与修改、审核策略的上线与进审量的调控，为策略上线提供数据支撑，并推动上线新的审核策略}
-        \resumeOneItem{在职期间共负责上线了10+审核策略，包括事先的数据搜集与策略上线后的效果跟进，积累了一定团队开发经验}
+        \resumeOneItem{主要工作为将CI环境中的数据库容器化，并以此为基础设计新的CI Pipeline逻辑}
+        \resumeOneItem{设计Pipeline自动对定时备份的数据库镜像进行压缩和容器化}
+        \resumeOneItem{使CI环境初始化阶段的数据传输量下降45\%，新CI Pipeline运行速度提升10\%，积累了一定团队开发经验}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{1pt}
@@ -166,22 +167,20 @@
 \section{\faAward \ 获评奖项}
   \resumeSubHeadingListStart
     \resumeSubItem{科技竞赛}
-    {2021年国际AIOps挑战赛亚军、2020年国际AIOps挑战赛殿军、2018年清华大学智能体大赛挑战赛一等奖}
+    {2018年清华大学智能体大赛挑战赛一等奖}
     \resumeSubItem{信息学竞赛}
-      {NOI2015金牌、APIO2015金牌、2016年ACM-ICPC亚洲区域赛长春赛区金奖}
-    \resumeSubItem{奖学金}
-      {2016年清华大学新生二等奖学金}
+      {NOIP2016一等奖、2018年湖北省大学生程序设计竞赛银奖、2018年CCF大学生计算机系统与程序设计大赛(CCSP)银奖}
   \resumeSubHeadingListEnd
 \vspace{1pt}
 %-----------SKILLS-----------------
 \section{\faCog \ 知识技能}
   \resumeSubHeadingListStart
     \resumeSubItem{编程语言}
-    {熟练使用Python，了解C++，在快速实现/开发小型算法/应用上具有一定优势}
+    {了解C++，在快速实现/开发应用上具有一定优势}
     \resumeSubItem{工具使用}
-    {熟练使用Grafana，有一定PyTorch搭建神经网络的经验}
-    \resumeSubItem{学术前沿}
-    {对时间序列异常检测的算法以及评估、复杂系统内的根因定位方面有一定了解以及自己的想法}
+    {较为了解容器底层原理，有一定的容器构建和优化经验，有一定的脚本编写经验}
+   % \resumeSubItem{学术前沿}
+   % {对时间序列异常检测的算法以及评估、复杂系统内的根因定位方面有一定了解以及自己的想法}
   \resumeSubHeadingListEnd
 
 \end{document}
